@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+            function SomeDeleteRowFunction(o) {
+             //no clue what to put here?
+             var p=o.parentNode.parentNode;
+                 p.parentNode.removeChild(p);
+            }
+            </script>
+            
+    <style>
+        
+        table, th, td {
+  border: 0px solid grey;
+  text-align: center;
+}
+        
+    </style>
+    <title>EdiTable</title>
+</head>
+<body>
+        <table class="table table-hover table-striped table-responsive ">
+            <thead class="thead-dark">
+                 <tr>
+                         <th>City</th>
+                         <th>Area</th>
+                         <th>Population</th>
+                         <th colspan="2">Telephone</th>
+                         <th>Link</th>
+                         <th colspan="2">Edit</th>
+                         
+                     </tr> 
+            </thead>
+            <tbody class="tbody-light">
+                 <tr>
+                     <div contenteditable="true"></div>
+                         <td contenteditable="true">London</td>
+                         <td contenteditable="true">51</td>
+                         <td contenteditable="true">10005</td>
+                         <td contenteditable="true">012</td>
+                         <td contenteditable="true">051</td>
+                         <td ><a href="https://az.wikipedia.org/wiki/London" target="_blank">To London</a></td>
+                         <td>&#9998;</td>
+                         <td><p onclick="SomeDeleteRowFunction(this)" >
+                             
+                                <a href="#">
+                                  <span class="glyphicon glyphicon-trash" ></span>
+                                </a>
+                              </p></td>
+                        </div>
+                     </tr> 
+                     <tr>
+                         <td contenteditable="true">Baku</td>
+                         <td contenteditable="true">51</td>
+                         <td contenteditable="true">10005</td>
+                         <td contenteditable="true">012</td>
+                         <td contenteditable="true">051</td>
+                         <td><a href="https://az.wikipedia.org/wiki/Bak%C4%B1" target="_blank">To Baku</a></td>
+                         <td>&#9998;</td>
+                         <td><p onclick="SomeDeleteRowFunction(this)" >
+                             
+                                <a href="#">
+                                  <span class="glyphicon glyphicon-trash" ></span>
+                                </a>
+                              </p></td>
+                      </tr> 
+                      <tr id="row3" >
+                          <td contenteditable="true">Berlin</td>
+                          <td contenteditable="true">51</td>
+                          <td contenteditable="true">10005</td>
+                          <td contenteditable="true" >012</td>
+                         <td contenteditable="true">051</td>
+                         
+                         <td><a href="https://az.wikipedia.org/wiki/Berlin" target="_blank">To Berlin</a></td>
+                         <td > &#9998;</td>
+                         <td>
+                                <p onclick="SomeDeleteRowFunction(this)" >
+                             
+                                        <a href="#">
+                                          <span class="glyphicon glyphicon-trash" ></span>
+                                        </a>
+                                      </p></td>
+                      </tr> 
+                      
+                      
+                      
+            </tbody>
+            
+        </table>
+ 
+ </body>
+</html>
